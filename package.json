@@ -1,0 +1,28 @@
+{
+  "name": "react-indeep",
+  "version": "1.0.0",
+  "description": "Explore React details",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manumanuel/react-indeep.git"
+  },
+  "author": "manu manuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manumanuel/react-indeep/issues"
+  },
+  "homepage": "https://github.com/manumanuel/react-indeep#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

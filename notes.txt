@@ -1,3 +1,4 @@
+/*
 React is a JavaScript Library. The name ‘React’ was chosen
 because the library was designed to allow developers to react
 to changes in state and data within an application, and to
@@ -31,6 +32,8 @@ tells the application when to call library functions. When
 using a framework, the control is reversed, which means that
 the framework tells the developer where code needs to be
 provided and calls it as it requires.
+
+*/
 
 
 Cross Origin:

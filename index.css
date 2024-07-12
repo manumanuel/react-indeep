@@ -1,4 +1,50 @@
-#header {
-  background-color: skyblue;
-  color: red;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.logo {
+  width: 80px;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.res-card {
+  width: 200px;
+  margin: 2px;
+  background-color: lightblue;
+}
+
+.res-card:hover {
+  border: 2px solid gray;
+  cursor: pointer;
+}
+
+.res-img {
+  width: 100%;
+}
+
+.search {
+  padding: 10px;
+}
+
+.filter-btn {
+  margin-top: 10px;
+  background-color: chocolate;
+  font-weight: bold;
+  color: white;
 }

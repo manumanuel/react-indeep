@@ -19,3 +19,18 @@
 - supports HTTPs
 - tree shaking (removes unused codes)
 - different dev & prod builds (dev build take little more time compared with prod build)
+
+#App structure
+/\* TODO
+
+- Header
+- - logo
+- - about us
+- - contact us
+- - cart
+- Body
+- - card containers
+-       - cards
+- Footer
+- - copyright
+- \*/

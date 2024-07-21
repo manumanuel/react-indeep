@@ -69,3 +69,14 @@
   font-weight: bold;
   background-color: bisque;
 }
+
+.Menu {
+  background-color: beige;
+}
+
+.Cuisine {
+  color: rgb(56, 26, 4);
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

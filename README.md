@@ -34,3 +34,12 @@
 - Footer
 - - copyright
 - \*/
+
+# Routing
+
+- {createBrowserRouter, RouterProvider, Link, Outlet, useParams} from "react-router-dom"
+- createBrowserRouter is used to set up router config (path, element, errorElement, children)
+- RouterProvider used to add configured Router setup for rendering
+- Link is used to render component without reload as in SPA (Link is associated with 'to' to specify path, eg:- <Link to="/about">About Us</Link>)
+- Outlet - used to render component as children of parent component
+- useParams - used to get the passed parameters dynamically within the component

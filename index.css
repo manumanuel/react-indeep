@@ -80,3 +80,9 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+.emp-card {
+  padding: 10px;
+  border: 1px solid brown;
+  background-color: wheat;
+}

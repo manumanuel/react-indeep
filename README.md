@@ -43,3 +43,18 @@
 - Link is used to render component without reload as in SPA (Link is associated with 'to' to specify path, eg:- <Link to="/about">About Us</Link>)
 - Outlet - used to render component as children of parent component
 - useParams - used to get the passed parameters dynamically within the component
+
+# Class based Components
+
+- Life cycle methods
+  - ComponentDidMount
+  - ComponentDidUpdate
+  - ComponentWillUnmount
+- Loading Hierarchy
+  - constructor (dummy)
+  - render (dummy) [DOM populate with dummy data]
+  - ComponentDidMount - [API Call happens]
+  - setState [dummy State variables updated]
+  - render (actual data) [dummy data replaced with API data]
+  - ComponentDidUpdate
+  - ComponentWillUnmount [called when we leave the component]

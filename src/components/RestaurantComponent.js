@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
-import { RESTAURANTS_URL } from "../utils/constants";
+//import { useState, useEffect } from "react";
 import ShimmerComponent from "./ShimmerComponent";
 import { useParams } from "react-router-dom";
 
-const RestaurantComponent = () => {
-  const [resToDisplay, setResToDisplay] = useState(null);
+//import { RESTAURANTS_URL } from "../utils/constants";
+import useRestaurantMenuComponent from "../utils/useRestaurantMenuComponent";
 
+const RestaurantComponent = () => {
   const { id } = useParams();
+  /*
+ const [resToDisplay, setResToDisplay] = useState(null);
 
   useEffect(() => {
     fetchRestaurantDetails();
@@ -22,17 +24,24 @@ const RestaurantComponent = () => {
   //console.log(resToDisplay);
   const resData = resToDisplay?.cards[2]?.card?.card?.info;
   // console.log(resData);
+  */
+  const resToDisplay = useRestaurantMenuComponent(id); //used this custom hook to implement SRP, by calling menu list as an independent logic
+
+  const resData = resToDisplay?.cards[2]?.card?.card?.info;
+  //console.log(resToDisplay);
 
   const resMenus =
     resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
-      ?.card?.itemCards;
-  // console.log(resMenus);
-
-  // console.log(resToDisplay);
-
+      ?.card?.categories.length > 0
+      ? resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]
+          ?.card?.card?.categories[0].itemCards
+      : resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]
+          ?.card?.card?.itemCards;
+  //console.log(resMenus);
   if (resToDisplay === null) {
     return <ShimmerComponent />;
   }
+  // console.log(resToDisplay);
 
   return (
     <div className="Menu">

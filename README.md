@@ -51,6 +51,7 @@
   - ComponentDidUpdate
   - ComponentWillUnmount
 - Loading Hierarchy
+
   - constructor (dummy)
   - render (dummy) [DOM populate with dummy data]
   - ComponentDidMount - [API Call happens]
@@ -58,3 +59,15 @@
   - render (actual data) [dummy data replaced with API data]
   - ComponentDidUpdate
   - ComponentWillUnmount [called when we leave the component]
+
+  # Custom hooks
+
+  - create custom hooks & call it directly within components,
+    to make app lean & to follow SRP
+
+  # Chunking, Lazy loading
+
+  - lazy class with Suspense Component
+  - const componentConfig= lazy(()=> import("Component path"))
+  - refer this component config within <Suspense> <componentConfig/></Suspense>
+  - <Suspense fallback={JSX component}> </Suspense>

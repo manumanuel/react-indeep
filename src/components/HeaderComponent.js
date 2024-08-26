@@ -7,7 +7,7 @@ import useGetOnlineStatus from "../utils/useGetOnlineStatus";
 const HeaderComponent = () => {
   const [btnLogInOut, setBtnLogInOut] = useState("Login");
   const onlineStatus = useGetOnlineStatus();
-  console.log(onlineStatus);
+  //console.log(onlineStatus);
 
   return (
     <div className="header">

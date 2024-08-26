@@ -40,6 +40,8 @@ const BodyComponent = () => {
 
   if (onlineStatus === false) return <h2>"You are offline"</h2>;
 
+  //console.log(filteredRestaurants);
+
   return filteredRestaurants.length === 0 ? (
     <ShimmerComponent />
   ) : (
@@ -79,9 +81,9 @@ const BodyComponent = () => {
         </button>
       </div>
       <div className="res-container">
-        {filteredRestaurants.map((restaurant, index) => (
+        {filteredRestaurants.map((restaurant) => (
           <Link
-            key={restaurant.card.card.id}
+            key={restaurant.card.card.info.id}
             to={"restaurant/" + restaurant.card.card.info.id}
           >
             <RestaurantCard resCard={restaurant.card.card.info} />

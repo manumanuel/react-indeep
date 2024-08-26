@@ -32,12 +32,8 @@ const RestaurantComponent = () => {
 
   const resMenus =
     resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
-      ?.card?.categories.length > 0
-      ? resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]
-          ?.card?.card?.categories[0].itemCards
-      : resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]
-          ?.card?.card?.itemCards;
-  //console.log(resMenus);
+      ?.card?.itemCards;
+  console.log(resMenus);
   if (resToDisplay === null) {
     return <ShimmerComponent />;
   }
@@ -58,7 +54,6 @@ const RestaurantComponent = () => {
             {menu.card.info.price / 100 || menu.card.info.defaultPrice / 100}
           </li>
         ))}
-        ;
       </ul>
     </div>
   );

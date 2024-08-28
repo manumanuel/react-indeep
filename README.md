@@ -71,3 +71,14 @@
   - const componentConfig= lazy(()=> import("Component path"))
   - refer this component config within <Suspense> <componentConfig/></Suspense>
   - <Suspense fallback={JSX component}> </Suspense>
+
+  # Higher order components
+
+  - used to create an enhanced version of existing component
+  - with 'Promoted' card (in this code)
+
+# Controlled & uncontrolled components
+  - controlling the components behavior from parent controller
+
+# Lifting the state up
+ - updating the state of parent from child component

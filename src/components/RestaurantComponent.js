@@ -30,10 +30,13 @@ const RestaurantComponent = () => {
   const resData = resToDisplay?.cards[2]?.card?.card?.info;
   //console.log(resToDisplay);
 
-  const resMenus =
-    resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
-      ?.card?.itemCards;
-  console.log(resMenus);
+  const resMenus = resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR
+    ?.cards[3]?.card?.card?.itemCards
+    ? resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
+        ?.card?.itemCards
+    : resToDisplay?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
+        ?.card?.itemCards;
+  //console.log(resMenus);
   if (resToDisplay === null) {
     return <ShimmerComponent />;
   }

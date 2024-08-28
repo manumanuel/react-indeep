@@ -5,9 +5,9 @@ const RestaurantCard = (props) => {
   //console.log(resCard);
 
   return (
-    <div className="res-card">
+    <div className="w-60 p-1 min-h-60 bg-blue-300 hover:bg-green-400  h-auto">
       <img
-        className="res-img"
+        className="w-30 h-30 rounded-lg"
         src={CLOUD_URL + resCard.cloudinaryImageId}
         alt="res-img"
       />
@@ -18,6 +18,19 @@ const RestaurantCard = (props) => {
       <h6>ETA- {resCard.sla.deliveryTime} min</h6>
     </div>
   );
+};
+
+export const withPromotedLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div className="">
+        <label className="bg-black text-white rounded-lg p-1 absolute">
+          Promoted
+        </label>
+        <RestaurantCard {...props} />
+      </div>
+    );
+  };
 };
 
 export default RestaurantCard;

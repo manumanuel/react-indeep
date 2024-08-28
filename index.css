@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
 .header {
   display: flex;
   justify-content: space-between;
@@ -49,7 +53,6 @@
   background-color: chocolate;
   font-weight: bold;
   color: white;
-  /* padding: 0 5px; */
 }
 
 .shimmer-container {
@@ -86,3 +89,5 @@
   border: 1px solid brown;
   background-color: wheat;
 }
+
+*/

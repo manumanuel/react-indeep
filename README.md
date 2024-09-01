@@ -78,7 +78,9 @@
   - with 'Promoted' card (in this code)
 
 # Controlled & uncontrolled components
-  - controlling the components behavior from parent controller
+
+- controlling the components behavior from parent controller
 
 # Lifting the state up
- - updating the state of parent from child component
+
+- updating the state of parent from child component
